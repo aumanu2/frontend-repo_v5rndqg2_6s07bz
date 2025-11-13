@@ -9,7 +9,7 @@ function LogoBolt({ size = 32 }) {
       viewBox="0 0 64 64"
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden="true"
-      className="drop-shadow-[0_0_18px_rgba(99,102,241,0.5)]"
+      className="drop-shadow-[0_0_22px_rgba(99,102,241,0.55)]"
    >
       <defs>
         <linearGradient id="sk-bolt-g" x1="0" y1="0" x2="1" y2="1">
@@ -17,15 +17,11 @@ function LogoBolt({ size = 32 }) {
           <stop offset="100%" stopColor="#3b82f6" />
         </linearGradient>
       </defs>
-      {/* Energy bolt with gradient, no background */}
+      {/* Thicker energy bolt, no outline */}
       <path
-        d="M36 4 L14 36 H28 L22 60 L50 24 H36 L42 4 Z"
+        d="M40 4 L10 40 H28 L22 60 L54 22 H36 L40 4 Z"
         fill="url(#sk-bolt-g)"
-        stroke="#ffffff"
-        strokeWidth="2"
-        strokeLinejoin="round"
-        strokeLinecap="round"
-        opacity="0.98"
+        opacity="1"
       />
     </svg>
   )
