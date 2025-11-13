@@ -43,7 +43,7 @@ export default function Footer({ t }) {
             </div>
           </div>
         </div>
-        <div className="mt-10 text-center text-white/50 text-sm">© {new Date().getFullYear()} Flames AI Solutions. All rights reserved.</div>
+        <div className="mt-10 text-center text-white/50 text-sm">© {new Date().getFullYear()} Skynex. All rights reserved.</div>
       </div>
     </footer>
   )
