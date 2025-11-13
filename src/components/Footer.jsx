@@ -1,5 +1,5 @@
 import React from 'react'
-import { Linkedin, Twitter, Facebook } from 'lucide-react'
+import { Linkedin, Facebook, Instagram } from 'lucide-react'
 
 export default function Footer({ t }) {
   return (
@@ -16,7 +16,6 @@ export default function Footer({ t }) {
             <h4 className="text-white font-semibold mb-3">{t('company')}</h4>
             <ul className="space-y-2 text-sm">
               <li><a href="#about" className="hover:text-white transition-colors">{t('about')}</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">{t('careers')}</a></li>
               <li><a href="#" className="hover:text-white transition-colors">{t('privacy')}</a></li>
               <li><a href="#" className="hover:text-white transition-colors">{t('terms')}</a></li>
             </ul>
@@ -34,8 +33,8 @@ export default function Footer({ t }) {
               <a aria-label="LinkedIn" href="#" className="p-2 rounded-full bg-white/5 hover:bg-white/10 transition-colors">
                 <Linkedin size={18} />
               </a>
-              <a aria-label="X" href="#" className="p-2 rounded-full bg-white/5 hover:bg-white/10 transition-colors">
-                <Twitter size={18} />
+              <a aria-label="Instagram" href="https://instagram.com/skynex" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-white/5 hover:bg-white/10 transition-colors">
+                <Instagram size={18} />
               </a>
               <a aria-label="Facebook" href="#" className="p-2 rounded-full bg-white/5 hover:bg-white/10 transition-colors">
                 <Facebook size={18} />
