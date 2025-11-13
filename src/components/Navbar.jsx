@@ -1,7 +1,7 @@
 import React from 'react'
 import { Globe, Mail } from 'lucide-react'
 
-function LogoSK({ size = 32 }) {
+function LogoBolt({ size = 32 }) {
   return (
     <svg
       width={size}
@@ -9,45 +9,23 @@ function LogoSK({ size = 32 }) {
       viewBox="0 0 64 64"
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden="true"
-      className="drop-shadow-[0_0_20px_rgba(99,102,241,0.45)]"
-    >
+      className="drop-shadow-[0_0_18px_rgba(99,102,241,0.5)]"
+   >
       <defs>
-        <linearGradient id="sk-g" x1="0" y1="0" x2="1" y2="1">
+        <linearGradient id="sk-bolt-g" x1="0" y1="0" x2="1" y2="1">
           <stop offset="0%" stopColor="#8b5cf6" />
           <stop offset="100%" stopColor="#3b82f6" />
         </linearGradient>
       </defs>
-      <rect x="0" y="0" width="64" height="64" rx="14" fill="url(#sk-g)" />
-      {/* Stylized S */}
+      {/* Energy bolt with gradient, no background */}
       <path
-        d="M42 18c-3.5-2.2-7.8-2.5-11.4-.8-2.3 1.1-3.6 3-3.6 5 0 2.4 1.7 4 5.3 5l6.4 1.9c5.3 1.6 7.8 4.3 7.8 8.3 0 3.7-2.1 6.7-5.8 8.3-4.9 2.1-10.9 1.3-15.5-2.1"
-        fill="none"
-        stroke="#fff"
-        strokeWidth="3.2"
+        d="M36 4 L14 36 H28 L22 60 L50 24 H36 L42 4 Z"
+        fill="url(#sk-bolt-g)"
+        stroke="#ffffff"
+        strokeWidth="2"
+        strokeLinejoin="round"
         strokeLinecap="round"
-        opacity="0.95"
-      />
-      {/* Angular K */}
-      <path
-        d="M22 20v24"
-        stroke="#fff"
-        strokeWidth="3.2"
-        strokeLinecap="round"
-        opacity="0.95"
-      />
-      <path
-        d="M22 32l18-12"
-        stroke="#fff"
-        strokeWidth="3.2"
-        strokeLinecap="round"
-        opacity="0.95"
-      />
-      <path
-        d="M22 32l18 12"
-        stroke="#fff"
-        strokeWidth="3.2"
-        strokeLinecap="round"
-        opacity="0.95"
+        opacity="0.98"
       />
     </svg>
   )
@@ -58,7 +36,7 @@ export default function Navbar({ lang, setLang, t }) {
     <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-black/40 bg-black/30 border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <LogoSK size={32} />
+          <LogoBolt size={28} />
           <span className="text-white/90 font-semibold tracking-tight">Skynex</span>
         </div>
         <nav className="flex items-center gap-3">
